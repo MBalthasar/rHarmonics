@@ -62,25 +62,9 @@ sample_raster <- raster::brick(system.file(package = "rHarmonics",
                                            "extdata",
                                            "MODIS_NDVI_stack.tif"))
 
-# Convert raster stack to matrix
-sample_matrix <- as.matrix(sample_raster)
-
-# Flip rows and columns
-# -> Each column represents the NDVI time-series in one pixel
-sample_matrix_T <- t(sample_matrix)
-
-# Each column represents one cell
-mat_fitted <- apply(sample_matrix_T, 2, harmonics_fun,
-                    user_dates = ndvi_df$dates,
-                    harmonic_deg <- 3)
-
-# Define new raster
-new_raster <- sample_raster
-
-# Fill values on new raster layer based on data.frame
-for (i in 1:ncol(mat_fitted)) {
-  # Fill each cell of the new raster with the fitted values
-  # stored in each column of the matrix
-  new_raster[i] <- mat_fitted[,i]
-}
+fitted_raster <- raster::calc(sample_raster,
+                              function(x){
+                                 harmonics_fun(x, user_dates = ndvi_df$dates,
+                                               harmonic_deg = 3)
+                              })
 ```
