@@ -1,6 +1,8 @@
 # rHarmonics
 R package for harmonic modelling of time-series data.
 
+<img src="images/NDVI_combined_compressed.gif" width=1000>
+
 ## Installation
 
 To install the current version, use `devtools`.
