@@ -11,7 +11,8 @@ harmonics_fun(user_vals, user_dates, harmonic_deg, ref_date)
 
 \item{user_dates}{A Vector with Date objects. See \code{\link[base]{as.Date}}.}
 
-\item{harmonic_deg}{Numeric. The number of cycles per year that should be modelled.}
+\item{harmonic_deg}{Numeric. The number of cycles per year (harmonic degree)
+that should be modelled.}
 
 \item{ref_date}{(optional) A Date object. Default is 1970-01-01.}
 }
@@ -20,6 +21,12 @@ A numeric vector with the fitted values.
 }
 \description{
 This function enables the user to model different number of cycles per year
+}
+\details{
+To calculate the harmonic fitted curve of a periodic signal,
+         ordinary least squares regressions are computed using coupled
+         sine and cosine curves on time-series data. The underlying algorithm
+         is based on Shumway & Stoffer (2017) equations 4.1 – 4.2.
 }
 \examples{
 
@@ -66,4 +73,8 @@ fitted_raster <- raster::calc(sample_raster,
                                                harmonic_deg = 3)
                               })
 
+}
+\references{
+Shumway, R. H., & Stoffer, D. S. (2017). Time series analysis and its
+            applications: with r examples. Springer.
 }

@@ -6,11 +6,20 @@
 #'
 #' @param user_dates A Vector with Date objects. See \code{\link[base]{as.Date}}.
 #'
-#' @param harmonic_deg Numeric. The number of cycles per year that should be modelled.
+#' @param harmonic_deg Numeric. The number of cycles per year (harmonic degree)
+#'                     that should be modelled.
 #'
 #' @param ref_date (optional) A Date object. Default is 1970-01-01.
 #'
 #' @return A numeric vector with the fitted values.
+#'
+#' @details To calculate the harmonic fitted curve of a periodic signal,
+#'          ordinary least squares regressions are computed using coupled
+#'          sine and cosine curves on time-series data. The underlying algorithm
+#'          is based on Shumway & Stoffer (2017) equations 4.1 – 4.2.
+#'
+#' @references Shumway, R. H., & Stoffer, D. S. (2017). Time series analysis and its
+#'             applications: with r examples. Springer.
 #'
 #' @examples
 #'
