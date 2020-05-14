@@ -30,9 +30,9 @@
 #'                                      "extdata", "MODIS_NDVI_TimeSeries.rda"))
 #'
 #' # Apply harmonic function using 3 cycles per year
-#' fitted_3rd_deg <- harmonics_fun(user_vals <- ndvi_df$ndvi,
+#' fitted_3rd_deg <- harmonics_fun(user_vals = ndvi_df$ndvi,
 #'                                 user_dates = ndvi_df$dates,
-#'                                 harmonic_deg <- 3)
+#'                                 harmonic_deg = 3)
 #'
 #' # Combine fitted values with original df
 #' combined_df <- cbind(ndvi_df, fitted_3rd_deg)
