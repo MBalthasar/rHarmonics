@@ -3,7 +3,7 @@ R package for harmonic modelling of time-series data.
 
 <img src="images/NDVI_combined_compressed.gif" width=1000>
 
-To calculate the harmonic fitted curve of a periodic signal, ordinary least squares regressions were computed using coupled sine and cosine curves on time-series data. The underliying algorithm which is based Shumway, R. H., & Stoffer, D. S. (2017) equations 4.1 - 4.2 can be seen below:
+To calculate the harmonic fitted curve of a periodic signal, ordinary least squares regressions are computed using coupled sine and cosine curves on time-series data. The underlying algorithm which is based Shumway, R. H., & Stoffer, D. S. (2017) equations 4.1 - 4.2 can be seen below:
 
 <img src="images/Harmonic_Equation.png" width=500>
 
