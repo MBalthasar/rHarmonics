@@ -1,4 +1,4 @@
-## rHarmonics
+# rHarmonics
 [![DOI](https://zenodo.org/badge/256769269.svg)](https://zenodo.org/badge/latestdoi/256769269)
 
 R package for harmonic modelling of time-series data.
