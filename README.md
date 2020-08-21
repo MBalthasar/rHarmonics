@@ -77,5 +77,8 @@ fitted_raster <- raster::calc(sample_raster,
                               })
 ```
 
+## Citation
+Philipp, M. B. (2020): rHarmonics V.1.0. Zenodo. https://doi.org/10.5281/zenodo.3994381.
+
 ## Literature
 Shumway, R. H., & Stoffer, D. S. (2017). Time series analysis and its applications: with r examples. Springer.
