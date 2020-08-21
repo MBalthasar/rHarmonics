@@ -1,4 +1,5 @@
 ## rHarmonics
+[![DOI](https://zenodo.org/badge/256769269.svg)](https://zenodo.org/badge/latestdoi/256769269)
 R package for harmonic modelling of time-series data.
 
 <img src="images/NDVI_combined_compressed.gif" width=1000>
@@ -74,9 +75,6 @@ fitted_raster <- raster::calc(sample_raster,
                                                harmonic_deg = 3)
                               })
 ```
-
-## Citation
-Cite this code: [![DOI](https://zenodo.org/badge/256769269.svg)](https://zenodo.org/badge/latestdoi/256769269)
 
 ## Literature
 Shumway, R. H., & Stoffer, D. S. (2017). Time series analysis and its applications: with r examples. Springer.
