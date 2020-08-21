@@ -75,5 +75,8 @@ fitted_raster <- raster::calc(sample_raster,
                               })
 ```
 
+## Citation
+[![DOI](https://zenodo.org/badge/256769269.svg)](https://zenodo.org/badge/latestdoi/256769269)
+
 ## Literature
 Shumway, R. H., & Stoffer, D. S. (2017). Time series analysis and its applications: with r examples. Springer.
